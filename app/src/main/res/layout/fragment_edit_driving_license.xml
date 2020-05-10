@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDLNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_dl_no"
+            android:drawableLeft="@drawable/ic_dl_no"
+            android:drawablePadding="5dp"
+            android:background="@drawable/solid_border"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="@string/license_number"
+            android:inputType="text"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDLName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/solid_border"
+            android:drawableStart="@drawable/ic_account_box"
+            android:drawableLeft="@drawable/ic_account_box"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="text"
+            />
+
+         <Space
+             android:layout_width="wrap_content"
+             android:layout_height="20dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/solid_border"
+            android:drawableStart="@drawable/ic_date"
+            android:drawableLeft="@drawable/ic_date"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/date_of_birth"
+            android:focusableInTouchMode="false"
+            android:inputType="date"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+
+        <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+            android:background="@drawable/solid_border"
+                android:drawableStart="@drawable/ic_home"
+                android:drawableLeft="@drawable/ic_home"
+                android:drawablePadding="5dp"
+                android:ems="10"
+            android:hint="@string/address"
+                android:gravity="start"
+                android:inputType="textMultiLine"
+            android:importantForAutofill="no" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etIssueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/solid_border"
+            android:drawableStart="@drawable/ic_issue_date"
+            android:drawableLeft="@drawable/ic_issue_date"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="@string/issue_date"
+            android:focusableInTouchMode="false"
+            android:inputType="date"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <EditText
+            android:id="@+id/etExpiryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/solid_border"
+            android:drawableStart="@drawable/ic_issue_date"
+            android:drawableLeft="@drawable/ic_issue_date"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="@string/expiry_date"
+            android:focusableInTouchMode="false"
+            android:inputType="date"
+            android:importantForAutofill="no" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/ivUploadDL"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_upload_dl" />
+
+            <Space
+                android:layout_width="80dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/ivDownloadDL"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_download_dl" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/upload_license"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:gravity="center"
+                />
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/download_license"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custom_button"
+            android:enabled="false"
+            android:textAllCaps="false"
+            android:text="@string/submit"
+            android:textColor="#E8F8EC" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <EditText
+            android:id="@+id/tvIDOB"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/date_of_birth"
+            android:importantForAutofill="no"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/tvInvisibleIssueDate"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/issue_date"
+            android:importantForAutofill="no"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/tvInvisibleExpiryDate"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/expiry_date"
+            android:importantForAutofill="no"
+            android:inputType="date" />
+
+    </LinearLayout>
+</ScrollView>

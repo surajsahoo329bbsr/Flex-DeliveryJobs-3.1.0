@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"> <!-- removes action bar from all activites of app -->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#FFF</item>
+        <item name="colorPrimaryDark">#FFF</item>
+        <item name="android:fontFamily">@font/prod_sans_medium</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar"> <!-- Selectable removes action bar -->
+        <item name="windowActionBar">false</item>
+        <item name="colorControlNormal">#FFF</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:fontFamily">@font/prod_sans_medium</item>
+     </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>
+

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "805591991112",
+    "firebase_url": "https://flex-beta.firebaseio.com",
+    "project_id": "flex-beta",
+    "storage_bucket": "flex-beta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805591991112:android:b1062e7a0b0a550f",
+        "android_client_info": {
+          "package_name": "com.example.flex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805591991112-q3jbndvhscf0j093noig382kdfvk3vua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaVWi4Prh9g_rucsPZH9zxn_dL_oG738g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805591991112-q3jbndvhscf0j093noig382kdfvk3vua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

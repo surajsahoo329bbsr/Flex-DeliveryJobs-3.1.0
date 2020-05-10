@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1027888452464",
+    "firebase_url": "https://flex-dj.firebaseio.com",
+    "project_id": "flex-dj",
+    "storage_bucket": "flex-dj.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027888452464:android:b1062e7a0b0a550f",
+        "android_client_info": {
+          "package_name": "com.example.flex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027888452464-26k09jqr8elgfs0fabl3tm9eo6hsij0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwEhH6rQddzN4lB99hAXdeZl5vTUcRhC0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027888452464-26k09jqr8elgfs0fabl3tm9eo6hsij0n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
