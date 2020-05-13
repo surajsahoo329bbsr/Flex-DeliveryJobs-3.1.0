@@ -12,13 +12,14 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
             android:id="@+id/view2"
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:background="@drawable/solid_border"
+            android:theme="@style/Theme.MaterialComponents.Light"
             android:innerRadius="0dp"
             android:shape="ring"
             android:thicknessRatio="1.9"
@@ -35,7 +36,7 @@
                 android:contentDescription="@string/todo"
                 app:srcCompat="@drawable/delivery" />
 
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
 
 
         <TextView

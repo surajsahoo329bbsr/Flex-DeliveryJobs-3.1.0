@@ -30,10 +30,10 @@
                 android:orientation="vertical"
                 android:padding="20dp">
 
-                <androidx.cardview.widget.CardView
+                <com.google.android.material.card.MaterialCardView
                     android:id="@+id/view2"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:background="@drawable/solid_border"
                     android:innerRadius="0dp"
@@ -41,6 +41,7 @@
                     android:thicknessRatio="1.9"
                     app:cardCornerRadius="10dp"
                     app:strokeColor="#000"
+                    android:theme="@style/Theme.MaterialComponents.Light"
                     app:strokeWidth="@dimen/cardview_compat_inset_shadow"
                     tools:ignore="PrivateResource">
 
@@ -53,7 +54,7 @@
                         android:src="@drawable/ic_flipkart"
                         tools:ignore="VectorDrawableCompat" />
 
-                </androidx.cardview.widget.CardView>
+                </com.google.android.material.card.MaterialCardView>
 
     <TextView
         android:id="@+id/tvCompany"

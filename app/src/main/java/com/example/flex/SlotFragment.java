@@ -803,11 +803,6 @@ public class SlotFragment extends Fragment {
                                         }
                                     }
 
-                                    CustomListViewAdapter adapter = new CustomListViewAdapter(refActivity,
-                                            R.layout.list_slot, companies);
-
-                                    historyListViewSlot.setAdapter(adapter);
-
                                 }
 
                                 @Override
@@ -818,7 +813,14 @@ public class SlotFragment extends Fragment {
                                 }
                             });
 
+
                         }
+
+
+                        CustomListViewAdapter adapter = new CustomListViewAdapter(refActivity,
+                                R.layout.list_slot, companies);
+
+                        historyListViewSlot.setAdapter(adapter);
 
                     }
                 }

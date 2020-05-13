@@ -64,7 +64,7 @@
                     android:background="@drawable/solid_border"
                     android:layout_height="wrap_content">
 
-                    <androidx.cardview.widget.CardView
+                    <com.google.android.material.card.MaterialCardView
                         android:id="@+id/view2"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
@@ -74,6 +74,7 @@
                         android:layout_gravity="center"
                         android:innerRadius="0dp"
                         android:shape="ring"
+                        android:theme="@style/Theme.MaterialComponents.Light"
                         android:thicknessRatio="1.9"
                         app:cardCornerRadius="10dp"
                         app:strokeColor="#000"
@@ -90,7 +91,7 @@
                             android:contentDescription="@string/todo"
                             tools:ignore="VectorDrawableCompat" />
 
-                    </androidx.cardview.widget.CardView>
+                    </com.google.android.material.card.MaterialCardView>
 
                     <TextView
                         android:id="@+id/tvCompany"
