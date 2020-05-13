@@ -55,8 +55,12 @@ public class CustomListViewAdapter extends ArrayAdapter<Company> {
         holder.txtAddress.setText(company.getAddress());
         holder.imageView.setImageResource(company.getImageId());
         holder.txtPaymentStatus.setText(company.getPaymentStatus());
-        if (company.getPaymentStatus().equals("Payment Received"))
+        if (company.getPaymentStatus().equals("Payment Received")) {
             holder.ivPaymentStatus.setImageResource(R.drawable.ic_confirmed_tick);
+        }
+        if (company.getPaymentStatus().equals("Payment Not Received")) {
+            holder.ivPaymentStatus.setImageResource(R.drawable.ic_failed);
+        }
         holder.tvTransactionDateTime.setText(company.getTransactionDate());
         holder.tvTransactionMoney.setText("\u20B9 "+company.getTransactionMoney());
 

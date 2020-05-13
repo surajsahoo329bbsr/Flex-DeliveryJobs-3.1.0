@@ -567,7 +567,7 @@ public class SlotFragment extends Fragment {
                                                         if (!Objects.equals(transactionDateTime, "") && !Objects.equals(transactionMoney, ""))
                                                             item = new Company(images[i - 1], company[i - 1], modTime, address[i - 1], "Payment Received", transactionDateTime, transactionMoney);
                                                         else
-                                                            item = new Company(images[i - 1], company[i - 1], modTime, address[i - 1], "Payment Not Received", "Contact Your Company", "Rs 0.00");
+                                                            item = new Company(images[i - 1], company[i - 1], modTime, address[i - 1], "Payment Not Received", "Contact Your Company", "0.00");
 
                                                         companies.add(item);
 
@@ -657,7 +657,7 @@ public class SlotFragment extends Fragment {
                                                         if (!Objects.equals(transactionDateTime, "") && !Objects.equals(transactionMoney, ""))
                                                             item = new Company(images[i - 1], company[i - 1], modTime, address[i - 1], "Payment Received", transactionDateTime, transactionMoney);
                                                         else
-                                                            item = new Company(images[i - 1], company[i - 1], modTime, address[i - 1], "Payment Not Received", "Contact Your Company", "Rs 0.00");
+                                                            item = new Company(images[i - 1], company[i - 1], modTime, address[i - 1], "Payment Not Received", "Contact Your Company", "0.00");
 
                                                         companies.add(item);
 
@@ -741,7 +741,7 @@ public class SlotFragment extends Fragment {
                                                     if (!Objects.equals(transactionDateTime, "") && !Objects.equals(transactionMoney, ""))
                                                         item = new Company(images[i - 1], company[i - 1], modTime, address[i - 1], "Payment Received", transactionDateTime, transactionMoney);
                                                     else
-                                                        item = new Company(images[i - 1], company[i - 1], modTime, address[i - 1], "Payment Not Received", "Contact Your Company", "Rs 0.00");
+                                                        item = new Company(images[i - 1], company[i - 1], modTime, address[i - 1], "Payment Not Received", "Contact Your Company", "0.00");
 
                                                     companies.add(item);
 
@@ -796,13 +796,17 @@ public class SlotFragment extends Fragment {
                                             if (!Objects.equals(transactionDateTime, "") && !Objects.equals(transactionMoney, ""))
                                                 item = new Company(images[i - 1], company[i - 1], modTime, address[i - 1], "Payment Received", transactionDateTime, transactionMoney);
                                             else
-                                                item = new Company(images[i - 1], company[i - 1], modTime, address[i - 1], "Payment Not Received", "Contact Your Company", "Rs 0.00");
+                                                item = new Company(images[i - 1], company[i - 1], modTime, address[i - 1], "Payment Not Received", "Contact Your Company", "0.00");
 
                                             companies.add(item);
 
                                         }
                                     }
 
+                                    CustomListViewAdapter adapter = new CustomListViewAdapter(refActivity,
+                                            R.layout.list_slot, companies);
+
+                                    historyListViewSlot.setAdapter(adapter);
 
                                 }
 
@@ -816,14 +820,10 @@ public class SlotFragment extends Fragment {
 
                         }
 
-
                     }
                 }
 
-                CustomListViewAdapter adapter = new CustomListViewAdapter(refActivity,
-                        R.layout.list_slot, companies);
 
-                historyListViewSlot.setAdapter(adapter);
 
                 pd.dismiss();
 

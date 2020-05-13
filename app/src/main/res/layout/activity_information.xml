@@ -12,7 +12,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-        <com.google.android.material.card.MaterialCardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/view2"
             android:layout_width="75dp"
             android:layout_height="75dp"
@@ -35,7 +35,7 @@
                 android:contentDescription="@string/todo"
                 app:srcCompat="@drawable/delivery" />
 
-        </com.google.android.material.card.MaterialCardView>
+        </androidx.cardview.widget.CardView>
 
 
         <TextView

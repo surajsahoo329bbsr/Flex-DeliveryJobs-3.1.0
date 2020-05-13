@@ -31,30 +31,29 @@
                 android:padding="20dp">
 
                 <androidx.cardview.widget.CardView
-                android:id="@+id/view2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_gravity="center"
-                android:innerRadius="0dp"
-                android:shape="ring"
-                android:thicknessRatio="1.9"
-                app:cardCornerRadius="10dp"
-                app:strokeColor="#000"
-                app:strokeWidth="@dimen/cardview_compat_inset_shadow"
-                tools:ignore="PrivateResource">
+                    android:id="@+id/view2"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/solid_border"
+                    android:innerRadius="0dp"
+                    android:shape="ring"
+                    android:thicknessRatio="1.9"
+                    app:cardCornerRadius="10dp"
+                    app:strokeColor="#000"
+                    app:strokeWidth="@dimen/cardview_compat_inset_shadow"
+                    tools:ignore="PrivateResource">
 
-        <ImageView
-            android:id="@+id/ivImage"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_gravity="center"
-            android:contentDescription="@string/todo"
-            tools:ignore="VectorDrawableCompat" />
+                    <ImageView
+                        android:id="@+id/ivImage"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/ic_flipkart"
+                        tools:ignore="VectorDrawableCompat" />
 
-        </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/tvCompany"
